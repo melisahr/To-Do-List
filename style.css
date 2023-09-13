@@ -17,7 +17,7 @@
     max-width: 540px;
     background: #fff;
     margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 40px 30px 40px;
     border-radius: 1rem;
 }  
 .list h2{
@@ -100,4 +100,21 @@ ul li span{
 }
 ul li span:hover{
     background: #edeef0;
+}
+.bot{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+#pending{
+    font-family: sans-serif;
+    margin: 1rem 0;
+}
+#clearBtn{
+    background: #153677;
+}
+#clearBtn:hover{
+   opacity: 80%;
 }
