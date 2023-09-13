@@ -4,7 +4,7 @@ const listContainer = document.getElementById("list-container");
 function addTask(){
    if(inputBox.value === ''){
         alert("You must write something");
-    } else{
+    }else{
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
@@ -15,8 +15,10 @@ function addTask(){
     inputBox.value = "";
     saveData();
 }
+
+/*Add items with the Enter button*/
 inputBox.addEventListener("keydown", function (e) {
-    if (event.keyCode === 13){
+    if (e.key === "Enter"){
         addTask();
     }
 });
