@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="list">
-            <h2>To-Do List<img src="Icon/List.png"></h2>
+            <h2>To-Do List<img src="Icon/List.png" title="list"></h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your text">
                 <button id="addBtn" onclick="addTask()">Add</button>
@@ -20,7 +20,7 @@
                 <li>Task 3</li>-->
             </ul>
             <div class="bot">
-                <p id="pending">You have <span></span> task pending</p>                
+                <p id="pending">You have <span id="taskNum"></span> task(s) pending</p>                
                 <button id="clearBtn">Clear All</button>
             </div>
         </div>
